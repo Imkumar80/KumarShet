@@ -1,5 +1,13 @@
 [
   {
+    "title": "Beyond the Tokenizer: What Happens After Text Becomes Tokens?",
+    "excerpt": "A look at the stages that turn token IDs into model representations and generated text.",
+    "date": "2026-10-24",
+    "category": "AI & Language Models",
+    "tags": ["tokenization", "transformers", "LLMs", "KannadaSLM"],
+    "url": "https://medium.com/@kumarrshet701/beyond-the-tokenizer-what-happens-after-text-becomes-tokens-73562c36a874"
+  },
+  {
     "title": "The Tokenizer Tax on Indic Languages: What I Learned While Building Kannada-SLM",
     "excerpt": "Understanding tokenization, BPE, Unicode, and why representing Kannada efficiently matters for language models.",
     "date": "2026-10-15",
