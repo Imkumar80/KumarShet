@@ -43,103 +43,45 @@
           <div class="project-grid">
             <article class="project-card">
               <div class="project-topline">
-                <span class="project-type">Open model</span>
+                <span class="project-type">Open source · LLM data</span>
                 <span class="project-number">01</span>
               </div>
-              <h2>Qwen3.5-4B-AWQ</h2>
-              <p>AWQ INT4 quantization of Qwen3.5-4B, calibrated with 512 OpenPlatypus samples.</p>
+              <h2>LLM Data Lab</h2>
+              <p>
+                Prepare a corpus before training begins. This lightweight, reproducible toolkit helps inspect, clean,
+                validate, and split data for fine-tuning or continued pre-training; model training stays in tools like
+                Transformers and TRL.
+              </p>
               <dl class="project-stats project-stats-2x2">
                 <div class="project-stat">
-                  <dt>quantized model</dt>
-                  <dd>3.13 GB</dd>
+                  <dt>inspect</dt>
+                  <dd>Corpora</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>HF downloads · Oct 2026</dt>
-                  <dd>1,512</dd>
+                  <dt>prepare</dt>
+                  <dd>Clean · validate · split</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>smaller on disk</dt>
-                  <dd>2.56×</dd>
+                  <dt>audit reports track</dt>
+                  <dd>Changes · rejects</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>5-task 0-shot average</dt>
-                  <dd>68.67%</dd>
-                </div>
-              </dl>
-              <p class="project-caveat">Standalone benchmark average; a matched BF16 comparison has not been run.</p>
-              <a
-                class="text-link"
-                href="https://huggingface.co/kumar2235/Qwen3.5-4B-AWQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View on Hugging Face ↗</a
-              >
-            </article>
-
-            <article class="project-card">
-              <div class="project-topline">
-                <span class="project-type">Open source</span>
-                <span class="project-number">02</span>
-              </div>
-              <h2>Fashion Search Engine</h2>
-              <p>
-                A natural-language image search pipeline using semantic normalization, vector retrieval, and visual reranking.
-              </p>
-              <dl class="project-stats">
-                <div class="project-stat">
-                  <dt>fashion images indexed</dt>
-                  <dd>3,200</dd>
-                </div>
-                <div class="project-stat">
-                  <dt>BGE-M3 vectors</dt>
-                  <dd>1,024-D</dd>
-                </div>
-                <div class="project-stat">
-                  <dt>candidates reranked</dt>
-                  <dd>Top 100</dd>
+                  <dt>reproducibility</dt>
+                  <dd>Checksums · configs</dd>
                 </div>
               </dl>
               <a
                 class="text-link"
-                href="https://github.com/Imkumar80/Fashion_search_engine"
+                href="https://github.com/Imkumar80/llm-data-lab"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View project on GitHub ↗</a
+                >See the data experiments on GitHub →</a
               >
             </article>
-
-            <article class="project-card project-card-featured" id="kannadaslm">
-              <div class="project-topline">
-                <span class="project-type">Language models · Kannada</span>
-                <span class="project-status">In progress</span>
-              </div>
-              <h2>KannadaSLM</h2>
-              <p>
-                Developing KannadaSLM by adapting open-source LLMs through continued pre-training on Kannada text,
-                supervised fine-tuning, tokenizer experiments, and knowledge distillation.
-              </p>
-              <p>
-                I'm evaluating language generation quality, repetition, and instruction-following to understand what
-                makes Kannada models more reliable.
-              </p>
-              <dl class="project-stats">
-                <div class="project-stat">
-                  <dt>adaptation tracks</dt>
-                  <dd>4</dd>
-                </div>
-                <div class="project-stat">
-                  <dt>evaluation dimensions</dt>
-                  <dd>3</dd>
-                </div>
-              </dl>
-              <p class="project-caveat">Scope counts, not benchmark results. Model scores are not published yet.</p>
-              <span class="project-note">Work in progress — more coming soon.</span>
-            </article>
-
             <article class="project-card">
               <div class="project-topline">
                 <span class="project-type">Dataset · Kannada</span>
-                <span class="project-number">04</span>
+                <span class="project-number">02</span>
               </div>
               <h2>Kannada SFT Instruction Pool</h2>
               <p>
@@ -173,43 +115,97 @@
                 >Explore the Kannada examples →</a
               >
             </article>
-
             <article class="project-card">
               <div class="project-topline">
-                <span class="project-type">Open source · LLM data</span>
-                <span class="project-number">05</span>
+                <span class="project-type">Open model</span>
+                <span class="project-number">03</span>
               </div>
-              <h2>LLM Data Lab</h2>
-              <p>
-                Prepare a corpus before training begins. This lightweight, reproducible toolkit helps inspect, clean,
-                validate, and split data for fine-tuning or continued pre-training; model training stays in tools like
-                Transformers and TRL.
-              </p>
+              <h2>Qwen3.5-4B-AWQ</h2>
+              <p>AWQ INT4 quantization of Qwen3.5-4B, calibrated with 512 OpenPlatypus samples.</p>
               <dl class="project-stats project-stats-2x2">
                 <div class="project-stat">
-                  <dt>inspect</dt>
-                  <dd>Corpora</dd>
+                  <dt>quantized model</dt>
+                  <dd>3.13 GB</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>prepare</dt>
-                  <dd>Clean · validate · split</dd>
+                  <dt>HF downloads · Oct 2026</dt>
+                  <dd>1,512</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>audit reports track</dt>
-                  <dd>Changes · rejects</dd>
+                  <dt>smaller on disk</dt>
+                  <dd>2.56×</dd>
                 </div>
                 <div class="project-stat">
-                  <dt>reproducibility</dt>
-                  <dd>Checksums · configs</dd>
+                  <dt>5-task 0-shot average</dt>
+                  <dd>68.67%</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">Standalone benchmark average; a matched BF16 comparison has not been run.</p>
+              <a
+                class="text-link"
+                href="https://huggingface.co/kumar2235/Qwen3.5-4B-AWQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on Hugging Face ↗</a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-type">Open source</span>
+                <span class="project-number">04</span>
+              </div>
+              <h2>Fashion Search Engine</h2>
+              <p>
+                A natural-language image search pipeline using semantic normalization, vector retrieval, and visual reranking.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>fashion images indexed</dt>
+                  <dd>3,200</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>BGE-M3 vectors</dt>
+                  <dd>1,024-D</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>candidates reranked</dt>
+                  <dd>Top 100</dd>
                 </div>
               </dl>
               <a
                 class="text-link"
-                href="https://github.com/Imkumar80/llm-data-lab"
+                href="https://github.com/Imkumar80/Fashion_search_engine"
                 target="_blank"
                 rel="noopener noreferrer"
-                >See the data experiments on GitHub →</a
+                >View project on GitHub ↗</a
               >
+            </article>
+            <article class="project-card project-card-featured" id="kannadaslm">
+              <div class="project-topline">
+                <span class="project-type">Language models · Kannada</span>
+                <span class="project-status">In progress</span>
+              </div>
+              <h2>KannadaSLM</h2>
+              <p>
+                Developing KannadaSLM by adapting open-source LLMs through continued pre-training on Kannada text,
+                supervised fine-tuning, tokenizer experiments, and knowledge distillation.
+              </p>
+              <p>
+                I'm evaluating language generation quality, repetition, and instruction-following to understand what
+                makes Kannada models more reliable.
+              </p>
+              <dl class="project-stats">
+                <div class="project-stat">
+                  <dt>adaptation tracks</dt>
+                  <dd>4</dd>
+                </div>
+                <div class="project-stat">
+                  <dt>evaluation dimensions</dt>
+                  <dd>3</dd>
+                </div>
+              </dl>
+              <p class="project-caveat">Scope counts, not benchmark results. Model scores are not published yet.</p>
+              <span class="project-note">Work in progress — more coming soon.</span>
             </article>
           </div>
         </div>
