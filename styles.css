@@ -315,16 +315,10 @@ h3 {
 .about-gallery-heading {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
-  margin-top: 30px;
+  margin-top: -10px;
   margin-bottom: 12px;
-}
-
-.about-gallery-heading h3 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 650;
 }
 
 .about-gallery-heading p {
