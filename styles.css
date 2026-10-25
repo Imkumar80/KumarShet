@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --bg: #0b0e13;
-  --surface: #11161e;
-  --surface-raised: #171e28;
-  --text: #f1f3f5;
-  --muted: #9aa5b4;
-  --accent: #d7ff64;
-  --accent-ink: #101407;
-  --border: #28313e;
+  --bg: #090909;
+  --surface: #101010;
+  --surface-raised: #171717;
+  --text: #f2f2f2;
+  --muted: #a3a3a3;
+  --accent: #f5f5f5;
+  --accent-ink: #101010;
+  --border: #292929;
   --content-width: 1080px;
 }
 
@@ -21,9 +21,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(ellipse at 82% 7%, rgba(215, 255, 100, 0.07), transparent 28rem),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.7;
@@ -47,8 +45,8 @@ input {
   position: sticky;
   top: 0;
   z-index: 5;
-  border-bottom: 1px solid rgba(40, 49, 62, 0.85);
-  background: rgba(11, 14, 19, 0.86);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 9, 9, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -115,6 +113,7 @@ input {
   display: flex;
   min-height: min(690px, calc(100vh - 76px));
   align-items: center;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-inner {
@@ -159,12 +158,36 @@ h3 {
   color: var(--accent);
 }
 
-.hero h1 .hero-title-role {
+.hero-identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 21px;
+}
+
+.hero-avatar {
   display: block;
-  margin-top: 11px;
-  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  width: 104px;
+  height: 104px;
+  flex: 0 0 104px;
+  padding: 4px;
+  border: 1px solid #3a3a3a;
+  border-radius: 11px;
+  background: #111;
+  object-fit: cover;
+}
+
+.hero-identity h1 {
+  margin: 0 0 5px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  letter-spacing: -0.06em;
+}
+
+.hero-role {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.35;
 }
 
 .intro {
@@ -187,7 +210,7 @@ h3 {
   justify-content: center;
   padding: 10px 17px;
   border: 1px solid var(--border);
-  border-radius: 7px;
+  border-radius: 999px;
   font-size: 0.87rem;
   font-weight: 700;
   text-decoration: none;
@@ -201,8 +224,8 @@ h3 {
 }
 
 .button.primary:hover {
-  border-color: #e5ff9a;
-  background: #e5ff9a;
+  border-color: #d8d8d8;
+  background: #d8d8d8;
 }
 
 .button.secondary:hover {
@@ -385,10 +408,10 @@ h3 {
   justify-content: center;
   gap: 8px;
   padding: 8px 14px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: var(--surface-raised);
-  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 9px;
+  background: var(--accent);
+  color: var(--accent-ink);
   font-size: 0.82rem;
   font-weight: 650;
   text-decoration: none;
@@ -396,9 +419,9 @@ h3 {
 }
 
 .connect-buttons a:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: #d8d8d8;
+  background: #d8d8d8;
+  color: var(--accent-ink);
 }
 
 .experience-row {
@@ -456,14 +479,14 @@ h3 {
   padding: clamp(20px, 3vw, 28px);
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: linear-gradient(145deg, rgba(23, 30, 40, 0.92), rgba(17, 22, 30, 0.92));
+  background: linear-gradient(145deg, #171717, #101010);
 }
 
 .project-card-featured {
-  border-color: #536044;
+  border-color: #444;
   background:
-    radial-gradient(ellipse at 95% 0%, rgba(215, 255, 100, 0.08), transparent 60%),
-    linear-gradient(145deg, rgba(23, 30, 40, 0.96), rgba(17, 22, 30, 0.96));
+    radial-gradient(ellipse at 95% 0%, rgba(245, 245, 245, 0.05), transparent 60%),
+    linear-gradient(145deg, #171717, #101010);
 }
 
 .project-topline {
@@ -484,13 +507,13 @@ h3 {
 }
 
 .project-number {
-  color: #697484;
+  color: #777;
   font-variant-numeric: tabular-nums;
 }
 
 .project-status {
   padding: 4px 9px;
-  border: 1px solid rgba(215, 255, 100, 0.35);
+  border: 1px solid rgba(245, 245, 245, 0.35);
   border-radius: 999px;
   color: var(--accent);
   white-space: nowrap;
@@ -580,7 +603,7 @@ h3 {
 .posts {
   padding: 68px 0 92px;
   border-top: 1px solid var(--border);
-  background: rgba(17, 22, 30, 0.56);
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .section-header {
@@ -623,7 +646,7 @@ h3 {
 }
 
 .search-input::placeholder {
-  color: #778292;
+  color: #777;
 }
 
 .search-input:focus {
@@ -658,14 +681,14 @@ h3 {
 .filter-button:hover,
 .filter-button[aria-pressed="true"] {
   border-color: var(--accent);
-  background: rgba(215, 255, 100, 0.1);
+  background: rgba(245, 245, 245, 0.08);
   color: var(--accent);
 }
 
 .tag {
   min-height: 27px;
   padding: 3px 9px;
-  border-color: #313b49;
+  border-color: #333;
   font-size: 0.68rem;
 }
 
@@ -682,13 +705,13 @@ h3 {
   padding: clamp(20px, 3vw, 29px);
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: linear-gradient(145deg, rgba(23, 30, 40, 0.92), rgba(17, 22, 30, 0.92));
+  background: linear-gradient(145deg, #171717, #101010);
   transition: border-color 180ms ease, transform 180ms ease;
 }
 
 .post-card:hover {
   transform: translateY(-3px);
-  border-color: #536044;
+  border-color: #555;
 }
 
 .post-topline {
@@ -848,7 +871,7 @@ h3 {
 .article-body ul,
 .article-body ol {
   margin-bottom: 1.35rem;
-  color: #d0d5dc;
+  color: #d0d0d0;
 }
 
 .article-body h2 {
