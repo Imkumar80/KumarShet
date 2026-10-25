@@ -29,7 +29,7 @@ Use dates in `YYYY-MM-DD` format. Keep each post URL relative to the repository 
 2. In the repository, open **Settings → Pages** and select **GitHub Actions** as the source.
 3. The workflow in `.github/workflows/deploy-pages.yml` publishes on pushes to `main` or `master`.
 
-The repository's Pages URL is `https://imkumar80.github.io/Blogs/`.
+The repository's Pages URL is `https://imkumar80.github.io/KumarShet/`.
 
 ## Preview locally
 
